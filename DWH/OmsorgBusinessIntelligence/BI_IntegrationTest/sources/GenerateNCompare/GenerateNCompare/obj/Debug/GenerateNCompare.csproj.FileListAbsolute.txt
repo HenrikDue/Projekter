@@ -1,0 +1,7 @@
+C:\BI_IntegrationTest\sources\GenerateNCompare\GenerateNCompare\obj\Debug\ResolveAssemblyReference.cache
+C:\BI_IntegrationTest\sources\GenerateNCompare\GenerateNCompare\bin\Debug\GenerateNCompare.exe.config
+C:\BI_IntegrationTest\sources\GenerateNCompare\GenerateNCompare\bin\Debug\GenerateNCompare.exe
+C:\BI_IntegrationTest\sources\GenerateNCompare\GenerateNCompare\bin\Debug\GenerateNCompare.pdb
+C:\BI_IntegrationTest\sources\GenerateNCompare\GenerateNCompare\obj\Debug\GenerateNCompare.exe
+C:\BI_IntegrationTest\sources\GenerateNCompare\GenerateNCompare\obj\Debug\GenerateNCompare.pdb
+C:\BI_IntegrationTest\sources\GenerateNCompare\GenerateNCompare\bin\Debug\Queries.xml

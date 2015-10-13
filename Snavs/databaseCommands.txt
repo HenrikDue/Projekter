@@ -1,0 +1,1 @@
+gbak -r o -v -user SYSDBA -password masterkey c:\avaleoproj\omsorgbackupfredag.fbk c:\avaleoproj\test_01.fdb

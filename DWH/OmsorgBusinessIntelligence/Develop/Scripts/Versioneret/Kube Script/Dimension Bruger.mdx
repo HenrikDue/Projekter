@@ -1,0 +1,246 @@
+<Create xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <ParentObject>
+        <DatabaseID>AvaeloAnalytic</DatabaseID>
+    </ParentObject>
+    <ObjectDefinition>
+        <Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200">
+            <ID>Dim Bruger</ID>
+            <Name>Bruger</Name>
+            <Source xsi:type="DataSourceViewBinding">
+                <DataSourceViewID>Omsorg</DataSourceViewID>
+            </Source>
+            <ErrorConfiguration>
+                <KeyNotFound>ReportAndStop</KeyNotFound>
+                <KeyDuplicate>ReportAndStop</KeyDuplicate>
+                <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+            </ErrorConfiguration>
+            <Language>1030</Language>
+            <Collation>Danish_Norwegian_CI_AS</Collation>
+            <UnknownMemberName>Unknown</UnknownMemberName>
+            <Attributes>
+                <Attribute>
+                    <ID>BRUGERID</ID>
+                    <Name>BRUGERID</Name>
+                    <Usage>Key</Usage>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>Integer</DataType>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>BRUGERID</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>BRUGERID</ColumnID>
+                        </Source>
+                    </NameColumn>
+                    <AttributeRelationships>
+                        <AttributeRelationship>
+                            <AttributeID>MEDARBCPRNR</AttributeID>
+                            <Name>Bruger Cprnr</Name>
+                        </AttributeRelationship>
+                        <AttributeRelationship>
+                            <AttributeID>LOGINSTATUS</AttributeID>
+                            <Name>Login status</Name>
+                        </AttributeRelationship>
+                        <AttributeRelationship>
+                            <AttributeID>KONTOSTATUS</AttributeID>
+                            <Name>Konto status</Name>
+                        </AttributeRelationship>
+                        <AttributeRelationship>
+                            <AttributeID>BRUGERNAVN</AttributeID>
+                            <Name>Bruger ID</Name>
+                        </AttributeRelationship>
+                        <AttributeRelationship>
+                            <AttributeID>NAVN</AttributeID>
+                            <Name>Brugernavn</Name>
+                        </AttributeRelationship>
+                        <AttributeRelationship>
+                            <AttributeID>PROFILNAVN</AttributeID>
+                            <Name>Bruger profil</Name>
+                        </AttributeRelationship>
+                        <AttributeRelationship>
+                            <AttributeID>GRUPPENAVN</AttributeID>
+                            <RelationshipType>Rigid</RelationshipType>
+                            <Name>Gruppe</Name>
+                        </AttributeRelationship>
+                    </AttributeRelationships>
+                    <OrderBy>Key</OrderBy>
+                    <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+                </Attribute>
+                <Attribute>
+                    <ID>MEDARBCPRNR</ID>
+                    <Name>Bruger Cprnr</Name>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>WChar</DataType>
+                            <DataSize>18</DataSize>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>MEDARBCPRNR</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <DataSize>18</DataSize>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>MEDARBCPRNR</ColumnID>
+                        </Source>
+                    </NameColumn>
+                    <OrderBy>Key</OrderBy>
+                </Attribute>
+                <Attribute>
+                    <ID>LOGINSTATUS</ID>
+                    <Name>Login status</Name>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>WChar</DataType>
+                            <DataSize>14</DataSize>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>LOGINSTATUS</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <DataSize>14</DataSize>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>LOGINSTATUS</ColumnID>
+                        </Source>
+                    </NameColumn>
+                    <OrderBy>Key</OrderBy>
+                </Attribute>
+                <Attribute>
+                    <ID>KONTOSTATUS</ID>
+                    <Name>Konto status</Name>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>WChar</DataType>
+                            <DataSize>11</DataSize>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>KONTOSTATUS</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <DataSize>11</DataSize>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>KONTOSTATUS</ColumnID>
+                        </Source>
+                    </NameColumn>
+                    <OrderBy>Key</OrderBy>
+                </Attribute>
+                <Attribute>
+                    <ID>GRUPPENAVN</ID>
+                    <Name>Gruppe</Name>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>WChar</DataType>
+                            <DataSize>50</DataSize>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>GRUPPENAVN</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <DataSize>50</DataSize>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>GRUPPENAVN</ColumnID>
+                        </Source>
+                    </NameColumn>
+                    <OrderBy>Key</OrderBy>
+                </Attribute>
+                <Attribute>
+                    <ID>BRUGERNAVN</ID>
+                    <Name>Bruger ID</Name>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>WChar</DataType>
+                            <DataSize>50</DataSize>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>BRUGERNAVN</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <DataSize>50</DataSize>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>BRUGERNAVN</ColumnID>
+                        </Source>
+                    </NameColumn>
+                    <OrderBy>Key</OrderBy>
+                </Attribute>
+                <Attribute>
+                    <ID>NAVN</ID>
+                    <Name>Brugernavn</Name>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>WChar</DataType>
+                            <DataSize>101</DataSize>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>NAVN</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <DataSize>101</DataSize>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>NAVN</ColumnID>
+                        </Source>
+                    </NameColumn>
+                    <OrderBy>Key</OrderBy>
+                </Attribute>
+                <Attribute>
+                    <ID>PROFILNAVN</ID>
+                    <Name>Bruger profil</Name>
+                    <KeyColumns>
+                        <KeyColumn>
+                            <DataType>WChar</DataType>
+                            <DataSize>50</DataSize>
+                            <Source xsi:type="ColumnBinding">
+                                <TableID>dbo_DimBruger</TableID>
+                                <ColumnID>PROFILNAVN</ColumnID>
+                            </Source>
+                        </KeyColumn>
+                    </KeyColumns>
+                    <NameColumn>
+                        <DataType>WChar</DataType>
+                        <DataSize>50</DataSize>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_DimBruger</TableID>
+                            <ColumnID>PROFILNAVN</ColumnID>
+                        </Source>
+                    </NameColumn>
+                </Attribute>
+            </Attributes>
+            <ProactiveCaching>
+                <SilenceInterval>-PT1S</SilenceInterval>
+                <Latency>-PT1S</Latency>
+                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                <Source xsi:type="ProactiveCachingInheritedBinding" />
+            </ProactiveCaching>
+        </Dimension>
+    </ObjectDefinition>
+</Create>
+

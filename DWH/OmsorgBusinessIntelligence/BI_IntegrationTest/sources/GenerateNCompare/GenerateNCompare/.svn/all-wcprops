@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare
+END
+IDataComparer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/IDataComparer.cs
+END
+Logger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/Logger.cs
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/App.config
+END
+DataGenerator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/DataGenerator.cs
+END
+IConfiguration.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/IConfiguration.cs
+END
+ILoggable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/ILoggable.cs
+END
+GenerateNCompare.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/GenerateNCompare.csproj.user
+END
+ILogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/ILogger.cs
+END
+IDataGenerator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/IDataGenerator.cs
+END
+DBConnector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/DBConnector.cs
+END
+DataComparer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/DataComparer.cs
+END
+Configuration.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/Configuration.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/Program.cs
+END
+Queries.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/Queries.xml
+END
+IConfigurable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/IConfigurable.cs
+END
+IDBConnector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/IDBConnector.cs
+END
+GenerateNCompare.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/17127/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/GenerateNCompare/GenerateNCompare/GenerateNCompare.csproj
+END

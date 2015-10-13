@@ -1,0 +1,461 @@
+<Create xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <ParentObject>
+        <DatabaseID>AvaeloAnalytic</DatabaseID>
+        <CubeID>Omsorg 1</CubeID>
+    </ParentObject>
+    <ObjectDefinition>
+        <MeasureGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200">
+            <ID>Fact Bruger</ID>
+            <Name>Fact Bruger</Name>
+            <Measures>
+                <Measure>
+                    <ID>BRUGERID</ID>
+                    <Name>Antal brugere</Name>
+                    <AggregateFunction>DistinctCount</AggregateFunction>
+                    <DataType>Integer</DataType>
+                    <Source>
+                        <DataType>Integer</DataType>
+                        <Source xsi:type="ColumnBinding">
+                            <TableID>dbo_FactBruger</TableID>
+                            <ColumnID>BRUGERID</ColumnID>
+                        </Source>
+                    </Source>
+                </Measure>
+            </Measures>
+            <StorageMode>Molap</StorageMode>
+            <ProcessingMode>Regular</ProcessingMode>
+            <Dimensions>
+                <Dimension xsi:type="RegularMeasureGroupDimension">
+                    <CubeDimensionID>Dim Time</CubeDimensionID>
+                    <Attributes>
+                        <Attribute>
+                            <AttributeID>PK Date</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <NullProcessing>UnknownMember</NullProcessing>
+                                    <DataType>Date</DataType>
+                                    <Format>Short Date</Format>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_FactBruger</TableID>
+                                        <ColumnID>PK_DATE</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <Type>Granularity</Type>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Year</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Date</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Year</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Quarter</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Date</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Quarter</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Month</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Date</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Month</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Week</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Date</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Week</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Day Of Year</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Day_Of_Year</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Day Of Quarter</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Day_Of_Quarter</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Day Of Month</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Day_Of_Month</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Day Of Week</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Day_Of_Week</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Week Of Year</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Week_Of_Year</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Month Of Year</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Month_Of_Year</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Month Of Quarter</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Month_Of_Quarter</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Quarter Of Year</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Quarter_Of_Year</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Helligdag</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Helligdag</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>Arbejdsdag</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>Time</TableID>
+                                        <ColumnID>Arbejdsdag</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                    </Attributes>
+                </Dimension>
+                <Dimension xsi:type="RegularMeasureGroupDimension">
+                    <CubeDimensionID>Bevægelse</CubeDimensionID>
+                    <Attributes>
+                        <Attribute>
+                            <AttributeID>BEVAEG ID</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_FactBruger</TableID>
+                                        <ColumnID>BEVAEGID</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <Type>Granularity</Type>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>BEVAEG NAVN</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBevaegelse</TableID>
+                                        <ColumnID>BEVAEG_NAVN</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                    </Attributes>
+                </Dimension>
+                <Dimension xsi:type="RegularMeasureGroupDimension">
+                    <CubeDimensionID>Bruger</CubeDimensionID>
+                    <Attributes>
+                        <Attribute>
+                            <AttributeID>BRUGERID</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_FactBruger</TableID>
+                                        <ColumnID>BRUGERID</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <Type>Granularity</Type>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>MEDARBCPRNR</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>18</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBruger</TableID>
+                                        <ColumnID>MEDARBCPRNR</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>LOGINSTATUS</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>14</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBruger</TableID>
+                                        <ColumnID>LOGINSTATUS</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>KONTOSTATUS</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>11</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBruger</TableID>
+                                        <ColumnID>KONTOSTATUS</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>GRUPPENAVN</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBruger</TableID>
+                                        <ColumnID>GRUPPENAVN</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>BRUGERNAVN</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBruger</TableID>
+                                        <ColumnID>BRUGERNAVN</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>NAVN</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>101</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBruger</TableID>
+                                        <ColumnID>NAVN</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>PROFILNAVN</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>50</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBruger</TableID>
+                                        <ColumnID>PROFILNAVN</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                    </Attributes>
+                </Dimension>
+                <Dimension xsi:type="RegularMeasureGroupDimension">
+                    <CubeDimensionID>Bruger Status</CubeDimensionID>
+                    <Attributes>
+                        <Attribute>
+                            <AttributeID>BRUGERSTATUSID</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_FactBruger</TableID>
+                                        <ColumnID>BRUGERSTATUSID</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <Type>Granularity</Type>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>BRUGERSTATUS</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>WChar</DataType>
+                                    <DataSize>29</DataSize>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DimBrugerStatus</TableID>
+                                        <ColumnID>BRUGERSTATUS</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                    </Attributes>
+                </Dimension>
+                <Dimension xsi:type="RegularMeasureGroupDimension">
+                    <CubeDimensionID>MEDARBEJDERORGANISATION</CubeDimensionID>
+                    <Attributes>
+                        <Attribute>
+                            <AttributeID>DIM LEVERANDOR</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_FactBruger</TableID>
+                                        <ColumnID>MEDARBGRP</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                            <Type>Granularity</Type>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>AFDELINGID</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DIM_LEVERANDOR</TableID>
+                                        <ColumnID>AFDELINGID</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                        <Attribute>
+                            <AttributeID>ORGANISATIONID</AttributeID>
+                            <KeyColumns>
+                                <KeyColumn>
+                                    <DataType>Integer</DataType>
+                                    <Source xsi:type="ColumnBinding">
+                                        <TableID>dbo_DIM_LEVERANDOR</TableID>
+                                        <ColumnID>ORGANISATIONID</ColumnID>
+                                    </Source>
+                                </KeyColumn>
+                            </KeyColumns>
+                        </Attribute>
+                    </Attributes>
+                </Dimension>
+            </Dimensions>
+            <Partitions>
+                <Partition>
+                    <ID>Fact Bruger</ID>
+                    <Name>Fact Bruger</Name>
+                    <Source xsi:type="DsvTableBinding">
+                        <DataSourceViewID>Omsorg</DataSourceViewID>
+                        <TableID>dbo_FactBruger</TableID>
+                    </Source>
+                    <StorageMode>Molap</StorageMode>
+                    <ProcessingMode>Regular</ProcessingMode>
+                    <ProactiveCaching>
+                        <SilenceInterval>-PT1S</SilenceInterval>
+                        <Latency>-PT1S</Latency>
+                        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                        <Source xsi:type="ProactiveCachingInheritedBinding" />
+                    </ProactiveCaching>
+                </Partition>
+            </Partitions>
+            <ProactiveCaching>
+                <SilenceInterval>-PT1S</SilenceInterval>
+                <Latency>-PT1S</Latency>
+                <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+                <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+                <Source xsi:type="ProactiveCachingInheritedBinding" />
+            </ProactiveCaching>
+        </MeasureGroup>
+    </ObjectDefinition>
+</Create>
+

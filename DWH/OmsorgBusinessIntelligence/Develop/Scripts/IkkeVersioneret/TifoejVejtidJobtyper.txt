@@ -1,0 +1,11 @@
+set @cmd = 'insert '+@DestinationDB+'.dbo.DimPakkeTyper' +char(13) +
+			'(jobid, JOBNAVN,KATEGORI,NIVEAU1,NIVEAU2,NIVEAU3,BTP,BTPKATEGORI,BTPKATNAVN,FALLES_SPROG_ART,KATNAVN,FALLES_SPROG_NAVN,Slettet_job_navn) ' +char(13) +
+			'VALUES(''1000001'',''Standard Vejtid'',''1000000'',''0'',''0'',''1'',''8'',''4'',''Indirekte brugertid'',''2'',''Vejtid Besøg'',''1000000'',''Vejtid Besøg'')' +char(13)
+if @debug = 1 print @cmd
+exec (@cmd)
+
+set @cmd = 'insert '+@DestinationDB+'.dbo.DimPakkeTyper' +char(13) +
+			'(jobid, JOBNAVN,KATEGORI,NIVEAU1,NIVEAU2,NIVEAU3,BTP,BTPKATEGORI,BTPKATNAVN,FALLES_SPROG_ART,KATNAVN,FALLES_SPROG_NAVN,Slettet_job_navn) ' +char(13) +
+			'VALUES(''1000002'',''Mobil vejtid'',''1000000'',''0'',''0'',''2'',''8'',''4'',''Indirekte brugertid'',''2'',''Vejtid Besøg'',''1000000'',''Vejtid Besøg'')' +char(13)
+if @debug = 1 print @cmd
+exec (@cmd)

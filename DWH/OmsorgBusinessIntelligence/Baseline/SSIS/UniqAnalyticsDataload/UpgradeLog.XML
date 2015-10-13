@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UniqAnalyticsDataload">
+</Property><Property Name="Solution File" Value="C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\UniqAnalyticsDataload.sln">
+</Property><Property Name="User Options File" Value="C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\UniqAnalyticsDataload.suo">
+</Property><Property Name="Date" Value="2. oktober 2015">
+</Property><Property Name="Time" Value="17:07">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="UniqAnalyticsDataload.sln" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\UniqAnalyticsDataload.sln">
+</Event><Event ErrorLevel="0" Project="" Source="UniqAnalyticsDataload.suo" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\UniqAnalyticsDataload.suo">
+</Event><Event ErrorLevel="0" Project="UniqAnalyticsDataload" Source="UniqAnalyticsDataload.database" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\UniqAnalyticsDataload.database">
+</Event><Event ErrorLevel="0" Project="UniqAnalyticsDataload" Source="Firebird Import.dtsx" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\Firebird Import.dtsx">
+</Event><Event ErrorLevel="0" Project="UniqAnalyticsDataload" Source="Analytics Load.dtsx" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\Analytics Load.dtsx">
+</Event><Event ErrorLevel="0" Project="UniqAnalyticsDataload" Source="KMD Vagtplan Import.dtsx" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\KMD Vagtplan Import.dtsx">
+</Event><Event ErrorLevel="0" Project="UniqAnalyticsDataload" Source="Lav BTP.dtsx" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\Lav BTP.dtsx">
+</Event><Event ErrorLevel="0" Project="UniqAnalyticsDataload" Source="UniqAnalyticsDataload.dtproj" Description="File successfully backed up as C:\AvaleoProj\DWH\OmsorgBusinessIntelligence\Baseline\SSIS\UniqAnalyticsDataload\Backup\UniqAnalyticsDataload.dtproj">
+</Event><Event ErrorLevel="3" Project="UniqAnalyticsDataload" Source="UniqAnalyticsDataload.dtproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UniqAnalyticsDataload" Source="UniqAnalyticsDataload.dtproj" Description="Project converted successfully.">
+</Event><Event ErrorLevel="0" Project="" Source="UniqAnalyticsDataload.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="UniqAnalyticsDataload.sln" Description="Converted">
+</Event></UpgradeLog>

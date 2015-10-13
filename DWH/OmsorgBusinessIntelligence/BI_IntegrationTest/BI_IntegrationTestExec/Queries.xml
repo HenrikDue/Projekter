@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+    <VerificationQueries>
+      <query name="bruger">
+        SELECT TOP 1000 [SAGSID]
+        ,[PKDate]
+        ,[Foedselsdag]
+        ,[AlderDage]
+        ,[AlderAar]
+        ,[AlderAarAfrund]
+        ,[AlderGruppe]
+        ,[AlderGruppeStart]
+        ,[AlderGruppeSlut]
+        ,[Specifikation]
+        ,[Borger]
+        FROM [AvaleoAnalyticsDW].[dbo].[FactBorger]
+      </query>
+      <query name="borger">
+        SELECT TOP 1000 [SAGSID]
+        ,[PKDate]
+        ,[Foedselsdag]
+        ,[AlderDage]
+        ,[AlderAar]
+        ,[AlderAarAfrund]
+        ,[AlderGruppe]
+        ,[AlderGruppeStart]
+        ,[AlderGruppeSlut]
+        ,[Specifikation]
+        ,[Borger]
+        FROM [AvaleoAnalyticsDW].[dbo].[FactBorger]
+      </query>
+    </VerificationQueries>
+    <BaselineQueries>
+      <query name="bruger">
+        SELECT TOP 1000 [SAGSID]
+        ,[PKDate]
+        ,[Foedselsdag]
+        ,[AlderDage]
+        ,[AlderAar]
+        ,[AlderAarAfrund]
+        ,[AlderGruppe]
+        ,[AlderGruppeStart]
+        ,[AlderGruppeSlut]
+        ,[Specifikation]
+        ,[Borger]
+        FROM [AvaleoAnalyticsDW].[dbo].[FactBorger]
+      </query>
+      <query name="borger">
+        SELECT TOP 1000 [SAGSID]
+        ,[PKDate]
+        ,[Foedselsdag]
+        ,[AlderDage]
+        ,[AlderAar]
+        ,[AlderAarAfrund]
+        ,[AlderGruppe]
+        ,[AlderGruppeStart]
+        ,[AlderGruppeSlut]
+        ,[Specifikation]
+        ,[Borger]
+        FROM [AvaleoAnalyticsDW].[dbo].[FactBorger]
+      </query>
+    </BaselineQueries>
+</Queries>

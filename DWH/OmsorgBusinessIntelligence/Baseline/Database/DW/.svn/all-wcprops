@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/17797/trunk/OmsorgBusinessIntelligence/Baseline/Database/DW
+END
+CreateDB_DW.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/16672/trunk/OmsorgBusinessIntelligence/Baseline/Database/DW/CreateDB_DW.sql
+END
+CreateAll_DW.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/17797/trunk/OmsorgBusinessIntelligence/Baseline/Database/DW/CreateAll_DW.sql
+END
+DimTimExtended.xls
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/16672/trunk/OmsorgBusinessIntelligence/Baseline/Database/DW/DimTimExtended.xls
+END

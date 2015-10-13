@@ -1,0 +1,389 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/20416/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret
+END
+0025 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/20074/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0025%20Alter%20usp_Create_Dimensions.sql
+END
+0035 Alter usp_LavFunktionsNiveau.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/20416/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0035%20Alter%20usp_LavFunktionsNiveau.sql
+END
+0055 Create usp_LavStatusBevægelser.sql
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/24325/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0055%20Create%20usp_LavStatusBev%C3%A6gelser.sql
+END
+0037 Flyt VERSION TIL STAGING.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/21602/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0037%20Flyt%20VERSION%20TIL%20STAGING.sql
+END
+0015 Alter usp_LavBorgerHistorik.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/18308/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0015%20Alter%20usp_LavBorgerHistorik.sql
+END
+0056 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/24325/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0056%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0058 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/24325/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0058%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0033 Alter usp_PrepareBTP.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/20115/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0033%20Alter%20usp_PrepareBTP.sql
+END
+SQL server Agent job.docx
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/20462/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/SQL%20server%20Agent%20job.docx
+END
+0026 Create Udf_CheckLeverandoer.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0026%20Create%20Udf_CheckLeverandoer.sql
+END
+0022 Create usp_LavFunktionsNiveau.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/20418/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0022%20Create%20usp_LavFunktionsNiveau.sql
+END
+0050 Alter DimWeekendHelligdag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/22157/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0050%20Alter%20DimWeekendHelligdag.sql
+END
+0002 Create Udf_SaetDoegninddeling.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0002%20Create%20Udf_SaetDoegninddeling.sql
+END
+0030 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/19895/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0030%20Alter%20usp_Create_Dimensions.sql
+END
+0011 Alter usp_Create_FactTables_SP.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0011%20Alter%20usp_Create_FactTables_SP.sql
+END
+0012 Alter usp_Create_FactTables_TP.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0012%20Alter%20usp_Create_FactTables_TP.sql
+END
+0040 Create usp_Create_Dim_Bruger.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/24845/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0040%20Create%20usp_Create_Dim_Bruger.sql
+END
+0039 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/21604/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0039%20Alter%20usp_Create_Dimensions.sql
+END
+0060 Alter usp_PrepareBTP Falck.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/24842/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0060%20Alter%20usp_PrepareBTP%20Falck.sql
+END
+0029 Alter usp_LavBorgerHistorik.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/19895/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0029%20Alter%20usp_LavBorgerHistorik.sql
+END
+0016 Create usp_LavVisitationTil_Afgang.sql
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/20418/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0016%20Create%20usp_LavVisitationTil_Afgang.sql
+END
+0063 Create usp_Customer_Specific.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/24842/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0063%20Create%20usp_Customer_Specific.sql
+END
+0004 Update Version.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/18171/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0004%20Update%20Version.sql
+END
+0027 Alter usp_LavVisitationTil_Afgang.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/20074/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0027%20Alter%20usp_LavVisitationTil_Afgang.sql
+END
+0019 Alter usp_CreateFactPlanlagtUdfoertTid.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/18308/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0019%20Alter%20usp_CreateFactPlanlagtUdfoertTid.sql
+END
+0000 Create Version.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/18308/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0000%20Create%20Version.sql
+END
+0042 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/21607/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0042%20Alter%20usp_Create_Dimensions.sql
+END
+0032 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/20074/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0032%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0007 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0007%20Alter%20usp_Create_Dimensions.sql
+END
+0034 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/20417/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0034%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0053 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/24325/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0053%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0049 Alter Udf_Helligdag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/22157/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0049%20Alter%20Udf_Helligdag.sql
+END
+9999 Lav DimWeekendHelligdag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/18171/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/9999%20Lav%20DimWeekendHelligdag.sql
+END
+0041 Create usp_Create_Fact_Bruger.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/24845/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0041%20Create%20usp_Create_Fact_Bruger.sql
+END
+0001 Create SERIES_OCCURS_ON_DAY.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0001%20Create%20SERIES_OCCURS_ON_DAY.sql
+END
+0010 Alter usp_Create_FactTables_HJ.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0010%20Alter%20usp_Create_FactTables_HJ.sql
+END
+0036 Alter usp_LavVisitationTil_Afgang.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/21601/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0036%20Alter%20usp_LavVisitationTil_Afgang.sql
+END
+0024 Alter usp_CreateFactPlanlagtUdfoertTid.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0024%20Alter%20usp_CreateFactPlanlagtUdfoertTid.sql
+END
+0059 Alter usp_LavVisitationTil_Afgang.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/24842/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0059%20Alter%20usp_LavVisitationTil_Afgang.sql
+END
+0008 Alter usp_CreateFactPlanlagtUdfoertTid.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0008%20Alter%20usp_CreateFactPlanlagtUdfoertTid.sql
+END
+0048 Alter usp_Create_FactTables_HJ.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/22121/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0048%20Alter%20usp_Create_FactTables_HJ.sql
+END
+Versioner.docx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/24841/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/Versioner.docx
+END
+0062 Create usp_Create_Vagtplan_KMD.sql
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/24842/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0062%20Create%20usp_Create_Vagtplan_KMD.sql
+END
+0020 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/18308/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0020%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0014 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/20418/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0014%20Alter%20usp_Create_Dimensions.sql
+END
+0052 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/24325/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0052%20Alter%20usp_Create_Dimensions.sql
+END
+0043 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/21608/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0043%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0054 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/24325/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0054%20Alter%20usp_Create_Dimensions.sql
+END
+0018 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0018%20Alter%20usp_Create_Dimensions.sql
+END
+0009 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0009%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0017 Alter usp_Birthddays.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0017%20Alter%20usp_Birthddays.sql
+END
+0028 Alter usp_PrepareAnalysisdata.sql
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/19895/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0028%20Alter%20usp_PrepareAnalysisdata.sql
+END
+0057 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/24325/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0057%20Alter%20usp_Create_Dimensions.sql
+END
+0061 Alter SERIES_OCCURS_ON_DAY.sql
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/24842/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0061%20Alter%20SERIES_OCCURS_ON_DAY.sql
+END
+0006 Alter DimAlderopdeling.sql
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0006%20Alter%20DimAlderopdeling.sql
+END
+0013 Alter usp_CreateFactPlanlagtUdfoertTid.sql
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/18308/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0013%20Alter%20usp_CreateFactPlanlagtUdfoertTid.sql
+END
+0004 Create Udf_Helligdag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0004%20Create%20Udf_Helligdag.sql
+END
+0038 Alter FirebirdDefinition Bruger.sql
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/22121/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0038%20Alter%20FirebirdDefinition%20Bruger.sql
+END
+0031 Alter usp_LavFunktionsNiveau.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/19895/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0031%20Alter%20usp_LavFunktionsNiveau.sql
+END
+0003 Create usp_LavBorgerHistorik.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0003%20Create%20usp_LavBorgerHistorik.sql
+END
+0005 Alter View Dim_jobtyper.sql
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/18170/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0005%20Alter%20View%20Dim_jobtyper.sql
+END
+0021 Alter FirebirdDefinition Funkvurd.sql
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/19895/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0021%20Alter%20FirebirdDefinition%20Funkvurd.sql
+END
+0023 Alter usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0023%20Alter%20usp_Create_Dimensions.sql
+END
+0051 Alter usp_LavFunktionsNiveau.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/24844/trunk/OmsorgBusinessIntelligence/Develop/Scripts/Versioneret/0051%20Alter%20usp_LavFunktionsNiveau.sql
+END

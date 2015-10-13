@@ -1,0 +1,609 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="Delle\rg3"
+  DTS:CreatorComputerName="DELLE"
+  DTS:CreationDate="4/27/2007 8:09:17 AM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="302"
+  DTS:VersionGUID="{71987EBD-C6C3-4927-B168-A0E5FE8E93A2}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:MaxErrorCount="1000"
+  DTS:LocaleID="1030"
+  DTS:ObjectName="Firebird Import"
+  DTS:DTSID="{31058729-DC0E-4163-B396-8D3FCEEE63D5}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[EDW SQLServer 64 Bit]"
+      DTS:ObjectName="EDW SQLServer 64 Bit"
+      DTS:DTSID="{5AEEC214-88D1-4A5A-B643-3B1D691EECB0}"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SRVBIDEVELOP;Initial Catalog=AvaleoAnalytics_STA;Integrated Security=True;Application Name=&quot;SSIS-Omsorg Firebird Import-{5AEEC214-88D1-4A5A-B643-3B1D691EECB0}ADM-SQL-04.GMSTA&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.AvaleoAnalytics]"
+      DTS:ObjectName="localhost.AvaleoAnalytics"
+      DTS:DTSID="{183514C4-C83F-4963-B46A-07EBA489E618}"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SRVBIDEVELOP;Initial Catalog=AvaleoAnalytics_STA;Integrated Security=True;Application Name=&quot;SSIS-PG Firebird Import DEV-{183514C4-C83F-4963-B46A-07EBA489E618}IP-0AE4499B.AvaleoAnalytics_Staging&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Logfile Firebird Import]"
+      DTS:ObjectName="Logfile Firebird Import"
+      DTS:DTSID="{306B2BE2-A90C-4F28-8E87-E0301E3A98A4}"
+      DTS:CreationName="FILE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\SQL Log\Import.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Configurations>
+    <DTS:Configuration
+      DTS:ConfigurationType="1"
+      DTS:ConfigurationString="C:\Solitwork\SSIS\Omsorg firebird import\Configuration Files\Configration for PG Firebird Import Dev.dtsConfig"
+      DTS:ObjectName="Configration for PG Firebird Import Dev"
+      DTS:DTSID="{C255017D-56B8-4E3A-BA06-9F7AF147A7D6}"
+      DTS:CreationName="" />
+    <DTS:Configuration
+      DTS:ConfigurationType="1"
+      DTS:ConfigurationString="C:\Solitwork\SSIS\Omsorg firebird import\Configuration Files\Configration for PG Firebird Import Prod.dtsConfig"
+      DTS:ObjectName="Configration for PG Firebird Import Prod"
+      DTS:DTSID="{F8BB9027-BAAE-4340-860B-9A671C42F3BE}"
+      DTS:CreationName="" />
+  </DTS:Configurations>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="Logfile Firebird Import"
+      DTS:ObjectName="SSIS log provider for Text files"
+      DTS:DTSID="{72ACD1F8-5A6C-4615-BAED-F0BCB35F3356}"
+      DTS:Description="Writes log entries for events to a CSV file"
+      DTS:CreationName="DTS.LogProviderTextFile.3">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:Namespace="User"
+      DTS:IncludeInDebugDump="2345"
+      DTS:ObjectName="Debug"
+      DTS:DTSID="{F6730F49-B996-45A7-8DE6-30EAB1B3B262}"
+      DTS:CreationName="">
+      <DTS:VariableValue
+        DTS:DataType="8">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:Namespace="User"
+      DTS:IncludeInDebugDump="2345"
+      DTS:ObjectName="DestDatabase"
+      DTS:DTSID="{18881A67-1E28-42C3-BA66-CABE7C761E53}"
+      DTS:CreationName="">
+      <DTS:VariableValue
+        DTS:DataType="8">AvaleoAnalytics_DW</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:Namespace="User"
+      DTS:IncludeInDebugDump="6789"
+      DTS:ObjectName="TableNameRecordSet"
+      DTS:DTSID="{9B16E978-D3FA-4839-B81B-5436A22EE2A3}"
+      DTS:CreationName="">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:Namespace="User"
+      DTS:IncludeInDebugDump="6789"
+      DTS:ObjectName="TableNameStr"
+      DTS:DTSID="{E4AB21E4-D282-46A6-8AD3-7E3E8BCD0E3D}"
+      DTS:CreationName="">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:LoggingOptions
+    DTS:LoggingMode="1"
+    DTS:FilterKind="0">
+    <DTS:Property
+      DTS:Name="EventFilter"
+      DTS:DataType="8">3,7,OnError,12,OnPreExecute,12,OnTaskFailed</DTS:Property>
+    <DTS:Property
+      DTS:Name="ColumnFilter"
+      DTS:EventName="OnError">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:Name="ColumnFilter"
+      DTS:EventName="OnPreExecute">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:Property
+      DTS:Name="ColumnFilter"
+      DTS:EventName="OnTaskFailed">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">-1</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{72ACD1F8-5A6C-4615-BAED-F0BCB35F3356}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load data from UniqOmsorg"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load data from UniqOmsorg"
+      DTS:DTSID="{f543cd86-6eeb-4809-a83a-e8f4a8217029}"
+      DTS:Description="Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE">
+      <DTS:Variables />
+      <DTS:LoggingOptions
+        DTS:FilterKind="0" />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Load data from UniqOmsorg\Clean FireBirdDBDataDefinition table"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:ThreadHint="0"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server v9; © 2004 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Clean FireBirdDBDataDefinition table"
+          DTS:DTSID="{20b247d9-8840-40fe-b5b1-de3e6a04f550}"
+          DTS:Description="Execute SQL Task"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{183514C4-C83F-4963-B46A-07EBA489E618}"
+              SQLTask:SqlStatementSource="update FireBirdDBDataDefinition set lastimported = null, rowsimported = null, executiontime = null, errormessage = null, errornumber = null, errorcmd = null" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Load data from UniqOmsorg\Find tablenames"
+          DTS:ExecutableType="SSIS.Pipeline.3"
+          DTS:ForceExecValue="True"
+          DTS:FailPackageOnFailure="True"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Find tablenames"
+          DTS:DTSID="{9839acfe-0930-4b65-ae6f-278fb71e4304}"
+          DTS:CreationName="SSIS.Pipeline.3">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:ObjectData>
+            <pipeline
+              engineThreads="5"
+              BLOBTempStoragePath=""
+              bufferTempStoragePath=""
+              version="1">
+              <components>
+                <component
+                  refId="Package\Load data from UniqOmsorg\Find tablenames\Recordset Destination"
+                  name="Recordset Destination"
+                  componentClassID="{C457FD7E-CE98-4C4B-AEFE-F3AE0044F181}"
+                  description="Creates and populates an in-memory ADO recordset."
+                  contactInfo="Recordset Destination;Microsoft Corporation;Microsoft SqlServer v9; (C) 2005 Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+                  <properties>
+                    <property
+                      name="VariableName"
+                      dataType="System.String"
+                      description="Specifies the variable that contains the recordset.">User::TableNameRecordSet</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Load data from UniqOmsorg\Find tablenames\Recordset Destination.Inputs[Recordset Destination Input]"
+                      name="Recordset Destination Input"
+                      hasSideEffects="true">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Load data from UniqOmsorg\Find tablenames\Recordset Destination.Inputs[Recordset Destination Input].Columns[tablename]"
+                          lineageId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Output].Columns[tablename]"
+                          cachedName="tablename"
+                          cachedDataType="nText" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query"
+                  name="Source - Query"
+                  componentClassID="{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                  description="Extracts data from a relational database by using a .NET provider."
+                  usesDispositions="true"
+                  version="4"
+                  contactInfo="Extracts data from a relational database by using a .NET provider.;Microsoft Corporation;Microsoft SqlServer v9; © 2004 Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2">
+                  <properties>
+                    <property
+                      name="SqlCommand"
+                      dataType="System.String"
+                      description="Specifies the SQL statement used by the component to extract data."
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=9.00.242.00, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+                      expressionType="Notify">Select distinct tablename from FirebirdDBDatadefinition order by tablename</property>
+                    <property
+                      name="CommandTimeout"
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out.">30</property>
+                    <property
+                      name="UserComponentTypeName"
+                      dataType="System.String">Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</property>
+                    <property
+                      name="AllowImplicitStringConversion"
+                      dataType="System.Boolean"
+                      description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns.">true</property>
+                    <property
+                      name="TableOrViewName"
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version= 11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+                      expressionType="Notify">"dbo"."FireBirdDBDataDefinition"</property>
+                    <property
+                      name="AccessMode"
+                      dataType="System.Int32"
+                      description="Specify the mode to retrieve external column information"
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter, Microsoft.SqlServer.ADONETSrc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">2</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Connections[IDbConnection]"
+                      name="IDbConnection"
+                      description="Managed connection manager"
+                      connectionManagerID="Package.ConnectionManagers[localhost.AvaleoAnalytics]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.AvaleoAnalytics]" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Output]"
+                      name="DataReader Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Output].Columns[tablename]"
+                          name="tablename"
+                          lineageId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Output].Columns[tablename]"
+                          dataType="nText"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          truncationRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Output].ExternalColumns[tablename]" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Output].ExternalColumns[tablename]"
+                          name="tablename"
+                          dataType="nText" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Error Output]"
+                      name="DataReader Error Output"
+                      isErrorOut="true">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Error Output].Columns[tablename]"
+                          name="tablename"
+                          lineageId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Error Output].Columns[tablename]"
+                          dataType="nText" />
+                        <outputColumn
+                          refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          lineageId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          lineageId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Load data from UniqOmsorg\Find tablenames.Paths[DataReader Output]"
+                  name="DataReader Output"
+                  startId="Package\Load data from UniqOmsorg\Find tablenames\Source - Query.Outputs[DataReader Output]"
+                  endId="Package\Load data from UniqOmsorg\Find tablenames\Recordset Destination.Inputs[Recordset Destination Input]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Load data from UniqOmsorg\Loop tablenames"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:MaxErrorCount="1000"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Loop tablenames"
+          DTS:DTSID="{5e54278d-1032-4ecf-bd27-800027d5d8c6}"
+          DTS:Description="Foreach Loop Container"
+          DTS:CreationName="STOCK:FOREACHLOOP">
+          <DTS:ForEachEnumerator
+            DTS:ObjectName="{53980B91-605B-41F3-9C81-C1DD848441A0}"
+            DTS:DTSID="{22570e26-eff7-442e-a1e0-f1b67c89e25f}"
+            DTS:CreationName="Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator, Microsoft.SqlServer.ForEachADOEnumerator, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+            <DTS:ObjectData>
+              <FEEADO
+                EnumType="EnumerateRowsInFirstTable"
+                VarName="User::TableNameRecordSet" />
+            </DTS:ObjectData>
+          </DTS:ForEachEnumerator>
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0" />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Load data from UniqOmsorg\Loop tablenames\Execute usp_ImportFireBirdData"
+              DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+              DTS:ThreadHint="0"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server v9; © 2004 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ExecValueType="8"
+              DTS:ExecValue=""
+              DTS:MaxErrorCount="1000"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Execute usp_ImportFireBirdData"
+              DTS:DTSID="{3a6fe655-daea-434c-97d9-82d30c9e18a7}"
+              DTS:Description="Execute SQL Task"
+              DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+              <DTS:Variables />
+              <DTS:LoggingOptions
+                DTS:FilterKind="0" />
+              <DTS:EventHandlers>
+                <DTS:EventHandler
+                  DTS:refId="Package\Load data from UniqOmsorg\Loop tablenames\Execute usp_ImportFireBirdData.EventHandlers[OnError]"
+                  DTS:EventID="664908352"
+                  DTS:EventName="OnError"
+                  DTS:LocaleID="-1"
+                  DTS:DTSID="{0a80eb86-1133-4087-9a90-c254b779589a}"
+                  DTS:CreationName="OnError">
+                  <DTS:Variables>
+                    <DTS:Variable
+                      DTS:Namespace="System"
+                      DTS:IncludeInDebugDump="6789"
+                      DTS:ObjectName="Propagate"
+                      DTS:DTSID="{0c7f41a4-9cef-444b-b261-e3b7015839a1}"
+                      DTS:Description="The propagate property of the event"
+                      DTS:CreationName="">
+                      <DTS:VariableValue
+                        DTS:DataType="11">-1</DTS:VariableValue>
+                    </DTS:Variable>
+                  </DTS:Variables>
+                  <DTS:Executables />
+                </DTS:EventHandler>
+              </DTS:EventHandlers>
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{183514C4-C83F-4963-B46A-07EBA489E618}"
+                  SQLTask:IsStoredProc="True"
+                  SQLTask:SqlStatementSource="usp_ImportFireBirdData" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="TableName"
+                    SQLTask:DtsVariableName="User::TableNameStr"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="16"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:ForEachVariableMappings>
+            <DTS:ForEachVariableMapping
+              DTS:VariableName="User::TableNameStr"
+              DTS:ValueIndex="0"
+              DTS:ObjectName="{D3E4896A-D4E2-4D13-BB90-3193D717A473}"
+              DTS:DTSID="{D3E4896A-D4E2-4D13-BB90-3193D717A473}"
+              DTS:CreationName="" />
+          </DTS:ForEachVariableMappings>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Load data from UniqOmsorg.PrecedenceConstraints[Constraint]"
+          DTS:From="Package\Load data from UniqOmsorg\Find tablenames"
+          DTS:To="Package\Load data from UniqOmsorg\Loop tablenames"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:DTSID="{269f91d5-774c-4aee-a309-15865090b38e}"
+          DTS:CreationName="" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Load data from UniqOmsorg.PrecedenceConstraints[Constraint 1]"
+          DTS:From="Package\Load data from UniqOmsorg\Clean FireBirdDBDataDefinition table"
+          DTS:To="Package\Load data from UniqOmsorg\Find tablenames"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:DTSID="{9701ee98-aa10-49e7-b059-47d70493630f}"
+          DTS:CreationName="" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1"
+      DTS:DTSID="{BB4D9525-43E1-4BBC-962A-F7934B3E2481}"
+      DTS:CreationName="OnError">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:Namespace="System"
+          DTS:IncludeInDebugDump="6789"
+          DTS:ObjectName="Propagate"
+          DTS:DTSID="{C625183B-5734-470E-AF61-0931051AA46E}"
+          DTS:Description="The propagate property of the event"
+          DTS:CreationName="">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables />
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="233.245283018868,43.9245283018868"
+          Id="Package\Load data from UniqOmsorg\Clean FireBirdDBDataDefinition table"
+          TopLeft="26.6415094339623,12.6981132075472" />
+        <NodeLayout
+          Size="233.245283018868,43.9245283018868"
+          Id="Package\Load data from UniqOmsorg\Find tablenames"
+          TopLeft="26.6415094339623,119.490566037736" />
+        <NodeLayout
+          Size="236.45283018868,43.9245283018868"
+          Id="Package\Load data from UniqOmsorg\Loop tablenames\Execute usp_ImportFireBirdData"
+          TopLeft="18.6037735849056,13.6415094339623" />
+        <ContainerLayout
+          HeaderHeight="43.924528301886795"
+          IsExpanded="True"
+          PanelSize="273.169811320755,78.8679245283019"
+          Size="273.169811320755,122.792452830189"
+          Id="Package\Load data from UniqOmsorg\Loop tablenames"
+          TopLeft="7.54716981132083,230.584905660377" />
+        <EdgeLayout
+          Id="Package\Load data from UniqOmsorg.PrecedenceConstraints[Constraint]"
+          TopLeft="143.245283018868,163.415094339623">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0.867924528301955,67.1698113207547"
+              Start="0,0"
+              End="0.867924528301955,59.6698113207547">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5849056603773" />
+                  <mssgle:LineSegment
+                    End="0.867924528301955,33.5849056603773" />
+                  <mssgle:LineSegment
+                    End="0.867924528301955,59.6698113207547" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load data from UniqOmsorg.PrecedenceConstraints[Constraint 1]"
+          TopLeft="143.245283018868,56.6226415094339">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62.867924528302"
+              Start="0,0"
+              End="0,55.367924528302">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.367924528302" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43.924528301886795"
+          IsExpanded="True"
+          PanelSize="302.037735849057,391.886792452831"
+          Size="302.037735849057,435.811320754717"
+          Id="Package\Load data from UniqOmsorg"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

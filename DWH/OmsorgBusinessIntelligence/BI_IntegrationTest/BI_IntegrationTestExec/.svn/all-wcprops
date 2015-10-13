@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/17340/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec
+END
+BI_IntegrationTest_Start.bat
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/17310/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/BI_IntegrationTest_Start.bat
+END
+GenerateNCompare.exe
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/17328/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/GenerateNCompare.exe
+END
+BI_ExecuteSSISPackages.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/17340/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/BI_ExecuteSSISPackages.exe.config
+END
+FireBirdManager.exe
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/16969/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/FireBirdManager.exe
+END
+FirebirdDBUpdate.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/17324/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/FirebirdDBUpdate.cmd
+END
+GenerateNCompare.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/17340/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/GenerateNCompare.exe.config
+END
+TestDBup.exe
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/16979/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/TestDBup.exe
+END
+Queries.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/17131/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/Queries.xml
+END
+BI_ExecuteSSISPackages.exe
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/17337/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/BI_IntegrationTestExec/BI_ExecuteSSISPackages.exe
+END

@@ -1,0 +1,36 @@
+set @cmd = 'IF EXISTS(SELECT name FROM '+@DestinationDB+'.dbo.sysobjects WHERE name =  ''DimBrugerTidsProcent'' AND type = ''U'') DROP TABLE '+@DestinationDB+'.dbo.DimBrugerTidsProcent'
+if @debug = 1 print @cmd
+exec (@cmd)
+
+set @cmd = 'SELECT BTPId, BtpNavn, BtpKategori, BtpKatNavn, 0 AS SORTERING into '+@DestinationDB+'.dbo.DimBrugerTidsProcent FROM '+@DestinationDB+'.dbo.DimPakkeTyperBTP'
+exec (@cmd)
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set BtpNavn=''Ukendt'',BtpKatNavn=''Ukendt'', BtpKategori=9999, SORTERING=15 where BTPId=9999'
+exec (@cmd)
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set BtpNavn=''Møder og frokost'', SORTERING=10 where BTPId=10'
+exec (@cmd)
+set @cmd = 'insert into '+@DestinationDB+'.dbo.DimBrugerTidsProcent values (8888,''Fremmøde tid'',8888,''Fremmøde tid'', 14)'
+exec (@cmd)  
+set @cmd = 'insert into '+@DestinationDB+'.dbo.DimBrugerTidsProcent values (7777,''Ledig tid'',7777,''Ledig tid'', 12)'
+exec (@cmd) 
+set @cmd = 'insert into '+@DestinationDB+'.dbo.DimBrugerTidsProcent values (6666,''Direkte borgertid'',6666,''Direkte borgertid'', 1)'
+exec (@cmd) 
+set @cmd = 'insert into '+@DestinationDB+'.dbo.DimBrugerTidsProcent values (5555,''Indirekte borgertid'',5555,''Indirekte borgertid'', 4)'
+exec (@cmd) 
+set @cmd = 'insert into '+@DestinationDB+'.dbo.DimBrugerTidsProcent values (4444,''Kvalifikationstid'',4444,''Kvalifikationstid'', 8)'
+exec (@cmd)
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=2 where BTPId=1'
+exec (@cmd) 
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=3 where BTPId=2'
+exec (@cmd)
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=5 where BTPId=6'
+exec (@cmd)
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=6 where BTPId=7'
+exec (@cmd)   
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=7 where BTPId=8'
+exec (@cmd)
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=9 where BTPId=9'
+exec (@cmd)  
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=11 where BTPId=11'
+exec (@cmd) 
+set @cmd = 'update '+@DestinationDB+'.dbo.DimBrugerTidsProcent set SORTERING=13 where BTPId=0'
+exec (@cmd)

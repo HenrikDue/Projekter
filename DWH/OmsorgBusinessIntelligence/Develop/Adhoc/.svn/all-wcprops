@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/20095/trunk/OmsorgBusinessIntelligence/Develop/Adhoc
+END
+usp_Create_Dimensions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/20095/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/usp_Create_Dimensions.sql
+END
+usp_Create_FactOpgaveHistorik.sql
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/20095/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/usp_Create_FactOpgaveHistorik.sql
+END
+usp_Create_FactOpgave_Ver2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/usp_Create_FactOpgave_Ver2.sql
+END
+usp_Create_FactOpgave.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/usp_Create_FactOpgave.sql
+END
+Query til forbrugt tid.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/Query%20til%20forbrugt%20tid.sql
+END
+VariableOgTempTabeller.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/20095/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/VariableOgTempTabeller.sql
+END
+usp_Create_Time_Dimension.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/usp_Create_Time_Dimension.sql
+END
+FindDuplicates.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/FindDuplicates.sql
+END
+OpgaveAnalyse.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/OpgaveAnalyse.sql
+END
+usp_HentAdhocData.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/19275/trunk/OmsorgBusinessIntelligence/Develop/Adhoc/usp_HentAdhocData.sql
+END

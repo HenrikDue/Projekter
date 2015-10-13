@@ -1,0 +1,1 @@
+<?xml version="1.0"?><DTSDeploymentManifest GeneratedBy="SRVBIDEVELOP\hdj" GeneratedFromProjectName="UniqAnalyticsDataload" GeneratedDate="2012-08-15T14:46:23.1012495+02:00" AllowConfigurationChanges="true"><Package>Analytics Load.dtsx</Package><Package>Firebird Import.dtsx</Package><Package>Lav BTP.dtsx</Package><Package>KMD Vagtplan Import.dtsx</Package></DTSDeploymentManifest>

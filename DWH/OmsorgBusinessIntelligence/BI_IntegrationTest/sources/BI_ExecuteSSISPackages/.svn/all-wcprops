@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/17354/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/BI_ExecuteSSISPackages
+END
+Logger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/16967/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/BI_ExecuteSSISPackages/Logger.cs
+END
+App.config
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/16967/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/BI_ExecuteSSISPackages/App.config
+END
+BIPackageExecutionEventListener.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/16967/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/BI_ExecuteSSISPackages/BIPackageExecutionEventListener.cs
+END
+Program.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/17353/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/BI_ExecuteSSISPackages/Program.cs
+END
+BI_ExecuteSSISPackages.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/17352/trunk/OmsorgBusinessIntelligence/BI_IntegrationTest/sources/BI_ExecuteSSISPackages/BI_ExecuteSSISPackages.csproj
+END

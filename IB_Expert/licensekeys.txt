@@ -1,0 +1,4 @@
+Computer Name             : SITE ZEALANDCARE
+KEY A                     : 51519210
+KEY B                     : 23029485
+
