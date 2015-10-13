@@ -1,0 +1,8 @@
+# Firebird DB
+*.fdb
+
+
+# SQL Server DB
+*.mdf
+*.ldf
+*.csv
